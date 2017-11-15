@@ -1,2 +1,5 @@
 # Assembly
-Some practise Assembly language programs.
+
+Practise Assembly programs, in MIPS architecture.
+Reverse Engineering resources.
+
