@@ -1,0 +1,12 @@
+trace-500-4 : https://pastebin.com/E0Jm3mZv
+
+./vmsim lru 4 256 < trace-500-4 : https://pastebin.com/mHWLfb3G 
+./vmsim lru 4 4 < trace-500-4 : https://pastebin.com/2tjLGMpT 
+./vmsim fifo 4 256 < trace-500-4 : https://pastebin.com/nAjAWT2Z 
+./vmsim fifo 4 4 < trace-500-4 : https://pastebin.com/M9341seQ
+
+trace-500-16 : https://pastebin.com/Xp5Dp1mU 
+./vmsim lru 16 4 < trace-500-16 : https://pastebin.com/mziQMmYs 
+./vmsim lru 16 256 < trace-500-16 : https://pastebin.com/S2mHfnFH 
+./vmsim fifo 16 4 < trace-500-16 : https://pastebin.com/1X0YS5vX 
+./vmsim fifo 16 256 < trace-500-16 : https://pastebin.com/uem0CUK3

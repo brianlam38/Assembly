@@ -1,0 +1,9 @@
+POLICY = FIFO
+>> FREE FRAME AVAILABLE
+>> FREE FRAME AVAILABLE
+>> FREE FRAME AVAILABLE
+>> FREE FRAME AVAILABLE
+
+=====Summary ====
+Requests:  #peeks: 722,  #pokes: 278,  total: 1000
+Paging:    #hits: 607,  #faults: 393,  #loads: 393,  #saves: 196

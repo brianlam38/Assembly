@@ -1,0 +1,75 @@
+START TIME = 5440
+Page Status Mod?  Frame  Acc(t) Load(t)  #Peeks  #Pokes
+[00]      -   no      -       -       -       0       0
+[01]      -   no      -       -       -       0       0
+[02]      -   no      -       -       -       0       0
+[03]      -   no      -       -       -       0       0
+[04]      -   no      -       -       -       0       0
+
+=== Request r0 @ t=0 ===
+Page 0 given frame 0
+Page Status Mod?  Frame  Acc(t) Load(t)  #Peeks  #Pokes
+[00]    mem   no      0       0    5554       1       0
+[01]      -   no      -       -       -       0       0
+[02]      -   no      -       -       -       0       0
+[03]      -   no      -       -       -       0       0
+[04]      -   no      -       -       -       0       0
+
+=== Request r1 @ t=1 ===
+Page 1 given frame 1
+Page Status Mod?  Frame  Acc(t) Load(t)  #Peeks  #Pokes
+[00]    mem   no      0       0    5554       1       0
+[01]    mem   no      1       1    5576       1       0
+[02]      -   no      -       -       -       0       0
+[03]      -   no      -       -       -       0       0
+[04]      -   no      -       -       -       0       0
+
+=== Request r2 @ t=2 ===
+Page 2 given frame 2
+Page Status Mod?  Frame  Acc(t) Load(t)  #Peeks  #Pokes
+[00]    mem   no      0       0    5554       1       0
+[01]    mem   no      1       1    5576       1       0
+[02]    mem   no      2       2    5595       1       0
+[03]      -   no      -       -       -       0       0
+[04]      -   no      -       -       -       0       0
+
+=== Request r3 @ t=3 ===
+Page 3 given frame 3
+Page Status Mod?  Frame  Acc(t) Load(t)  #Peeks  #Pokes
+[00]    mem   no      0       0    5554       1       0
+[01]    mem   no      1       1    5576       1       0
+[02]    mem   no      2       2    5595       1       0
+[03]    mem   no      3       3    5615       1       0
+[04]      -   no      -       -       -       0       0
+
+=== Request r4 @ t=4 ===
+Evict page 0
+Page 4 given frame 0
+Page Status Mod?  Frame  Acc(t) Load(t)  #Peeks  #Pokes
+[00]      -   no      -       -       -       1       0
+[01]    mem   no      1       1    5576       1       0
+[02]    mem   no      2       2    5595       1       0
+[03]    mem   no      3       3    5615       1       0
+[04]    mem   no      0       4    5634       1       0
+
+=== Request w0 @ t=5 ===
+Evict page 0
+Page 0 given frame -1
+Page Status Mod?  Frame  Acc(t) Load(t)  #Peeks  #Pokes
+[00]    mem  yes      -       5    5661       1       1
+[01]    mem   no      1       1    5576       1       0
+[02]    mem   no      2       2    5595       1       0
+[03]    mem   no      3       3    5615       1       0
+[04]    mem   no      0       4    5634       1       0
+
+=== Request w1 @ t=6 ===
+Page Status Mod?  Frame  Acc(t) Load(t)  #Peeks  #Pokes
+[00]    mem  yes      -       5    5661       1       1
+[01]    mem  yes      1       6    5576       1       1
+[02]    mem   no      2       2    5595       1       0
+[03]    mem   no      3       3    5615       1       0
+[04]    mem   no      0       4    5634       1       0
+
+=====Summary ====
+Requests:  #peeks: 5,  #pokes: 2,  total: 7
+Paging:    #hits: 1,  #faults: 0,  #loads: 6,  #saves: 0
